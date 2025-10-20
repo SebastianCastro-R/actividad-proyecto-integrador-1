@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Avances | Flex-IA</title>
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo flexia-text">
+        <img src="images/logo-flexia.png" alt="Logo Flex-IA" style="height: 55px; vertical-align: middle;">
+        <b>Flex-IA</b>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="avances.html">Desarrollo / Avances</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="avances.html">Desarrollo / Avances</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons flexia-text">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- ======= ENCABEZADO ======= -->
+  <div class="section center">
+    <div class="container">
+      <h3 class="flexia-text">Avances del Proyecto</h3>
+      <p class="light">Aquí encontrarás los principales hitos alcanzados durante el desarrollo de Flex-IA.</p>
+    </div>
+  </div>
+
+  <!-- ======= GALERÍA DE AVANCES ======= -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Avance 1 -->
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/interfaz.png" alt="Interfaz Java">
+            <span class="card-title">Interfaz Gráfica en Java</span>
+          </div>
+          <div class="card-content">
+            <p>Se diseñó la estructura visual de la aplicación con Swing, aplicando una interfaz moderna y adaptada a la guía de estilo del proyecto.</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="flexia-text toggle-detail" data-target="detalle1">Ver más</a>
+          </div>
+          <div id="detalle1" class="card-reveal">
+            <span class="card-title flexia-text">Detalles<i class="material-icons right">close</i></span>
+            <p>La interfaz incluye botones personalizados, menús interactivos y campos de texto con validación visual. Se respetó la paleta de colores establecida para mantener coherencia visual.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avance 2 -->
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/reconocimiento.png" alt="Reconocimiento de manos">
+            <span class="card-title">Reconocimiento de Manos</span>
+          </div>
+          <div class="card-content">
+            <p>Implementación del módulo en Python con OpenCV y MediaPipe para detectar movimientos y posturas de la mano en tiempo real.</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="flexia-text toggle-detail" data-target="detalle2">Ver más</a>
+          </div>
+          <div id="detalle2" class="card-reveal">
+            <span class="card-title flexia-text">Detalles<i class="material-icons right">close</i></span>
+            <p>El sistema reconoce puntos clave (landmarks) y valida la correcta ejecución de los ejercicios. Se está trabajando en su integración con la interfaz Java mediante sockets.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avance 3 -->
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/integracion.png" alt="Integración Python-Java">
+            <span class="card-title">Integración de Módulos</span>
+          </div>
+          <div class="card-content">
+            <p>Se estableció comunicación entre los módulos de Python y Java para compartir información del reconocimiento de manos en tiempo real.</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="flexia-text toggle-detail" data-target="detalle3">Ver más</a>
+          </div>
+          <div id="detalle3" class="card-reveal">
+            <span class="card-title flexia-text">Detalles<i class="material-icons right">close</i></span>
+            <p>Mediante el uso de sockets TCP, se transmite la información procesada desde Python hacia la aplicación Java, permitiendo la visualización de resultados en la interfaz.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======= INTERACCIÓN JS ======= -->
+  <div class="container center" style="margin-top: 40px;">
+    <button id="btnColor" class="btn-large btn-flexia waves-effect">Cambiar color de fondo</button>
+  </div>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="page-footer flexia-bg" style="margin-top: 50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Flex-IA</h5>
+          <p class="grey-text text-lighten-4">
+            Proyecto académico desarrollado para apoyar la rehabilitación del túnel carpiano mediante inteligencia artificial y visión por computadora.
+          </p>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Enlaces</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Inicio</a></li>
+            <li><a class="white-text" href="nosotros.html">Nosotros</a></li>
+            <li><a class="white-text" href="objetivos.html">Objetivos</a></li>
+          </ul>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Equipo</h5>
+          <ul>
+            <li><span class="white-text">Sebastián Castro</span></li>
+            <li><span class="white-text">Karol Tatiana Burbano</span></li>
+            <li><span class="white-text">Heidi Murillo</span></li>
+            <li><span class="white-text">Verónica Mujica</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2025 Flex-IA | Universidad del Valle – Sede Tuluá
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= SCRIPTS ======= -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inicializar las tarjetas reveal
+      var elems = document.querySelectorAll('.card');
+      M.AutoInit();
+
+      // Interacción JS: cambiar color de fondo
+      const btnColor = document.getElementById('btnColor');
+      const colors = ['#ffffff', '#f0f4ff', '#e7ecff'];
+      let index = 0;
+
+      btnColor.addEventListener('click', () => {
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+        M.toast({html: 'Color de fondo cambiado', classes: 'rounded'});
+      });
+    });
+  </script>
+
+</body>
+</html>
