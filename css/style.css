@@ -232,3 +232,12 @@ footer span {
   width: 100%;
   text-align: center;
 }
+
+
+/* ==============================
+   TEXTO DEL BANNER PRINCIPAL
+   ============================== */
+#index-banner h5 {
+  color: white !important; /* Cambia el texto a blanco */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* mejora la legibilidad sobre la imagen */
+}
