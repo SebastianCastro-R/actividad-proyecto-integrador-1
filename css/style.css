@@ -241,3 +241,30 @@ footer span {
   color: white !important; /* Cambia el texto a blanco */
   text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* mejora la legibilidad sobre la imagen */
 }
+
+/* ==============================
+   FOOTER FIJO AL FONDO (STICKY FOOTER)
+   ============================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto; /* El contenido principal ocupa el espacio disponible */
+}
+
+footer.page-footer {
+  flex-shrink: 0;
+}
+
+/* ==============================
+   ICONOS EN SECCIONES (INDEX)
+   ============================== */
+.icon-block .material-icons {
+  font-size: 3rem !important;  /* Tamaño del icono */
+  color: #1E3888;              /* Azul oscuro del proyecto */
+  margin-bottom: 15px;         /* Separación respecto al título */
+}
